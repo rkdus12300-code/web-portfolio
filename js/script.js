@@ -242,3 +242,21 @@ document.querySelectorAll('.thumbnail-box video').forEach(video => {
         video.currentTime = 0.1;
     });
 });
+
+// TOP BUTTON
+const topButton = document.getElementById('topButton');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+        topButton.classList.add('show');
+    } else {
+        topButton.classList.remove('show');
+    }
+});
+
+topButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
