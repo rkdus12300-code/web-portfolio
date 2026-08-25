@@ -235,10 +235,3 @@ const mainVideoObserver = new IntersectionObserver((entries) => {
 });
 
 mainVideoObserver.observe(mainBanner);
-
-
-document.querySelectorAll('.thumbnail-box video').forEach(video => {
-    video.addEventListener('loadedmetadata', () => {
-        video.currentTime = 0.1;
-    });
-});
