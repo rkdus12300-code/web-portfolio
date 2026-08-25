@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- CountUp -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.6.2/countUp.umd.js"></script>
+
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- 웹폰트 연결 -->
+    <!-- font-family: "Noto Sans KR", sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- font-family: "Marcellus", serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+
+    <!-- font-family: "Bowlby One SC", sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon_web-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <div class="inner header_wrap">
+            <div class="logo">PORTFOLIO</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Portfolio</a></li>
+                    <li><a href="#artwork">Artwork</a></li>
+                </ul>
+            </nav>
+            <div class="contact-btn"><a href="#contact">Contact</a></div>
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- mobile nav -->
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-close-btn" id="mobile-close-btn">X</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Portfolio</a></li>
+            <li><a href="#artwork">Artwork</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- main banner 영상 -->
+    <main>
+        <section class="main_banner">
+            <video id="mainVideo" class="bg_video" src="./video/portfolio_main.mp4" autoplay muted loop
+                playsinline></video>
+
+            <div class="banner_content inner">
+                <div class="stats">
+                    <!-- <div class="stat">
+                        <strong data-target="95">0</strong>
+                        <p>Design Tool</p>
+                    </div>
+                    <div class="stat">
+                        <strong data-target="90">0</strong>
+                        <p>Figma</p>
+                    </div>
+                    <div class="stat">
+                        <strong data-target="80">0</strong>
+                        <p>Html/CSS/JS</p>
+                    </div>
+                    <div class="stat">
+                        <strong data-target="90">0</strong>
+                        <p>Motion</p>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="container">
+
+        <!-- About -->
+        <section id="about" data-aos="fade-up">
+            <div class="inner">
+                <div class="grid-2">
+
+                    <!-- 왼쪽 : 프로필 -->
+                    <div class="about-profile reveal">
+
+                        <div class="about-me">
+                            <video src="./video/portfolio_introduce.mp4" autoplay muted loop playsinline></video>
+                        </div>
+
+                        <div class="profile-info">
+                            <h3>김가연</h3>
+
+                            <div class="profile-detail">
+                                <p>KIM GA YEON</p>
+                                <p>2000. 03. 23</p>
+                            </div>
+
+                            <div class="profile-contact">
+                                <span>contact</span>
+                                <p>010 2111 6346</p>
+                                <p>rkdus12300@naver.com</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- 오른쪽 : 소개 + 툴 -->
+                    <div class="about-content reveal" style="transition-delay: 0.2s;">
+
+                        <div class="about-copy">
+                            <h2 class="about-title">
+                                안녕하세요.<br>
+                                새로운 시도를 두려워하지 않고, <br>
+                                경험을 통해 꾸준히 성장하는 <br>
+                                디자이너입니다.
+                            </h2>
+
+                            <p class="about-desc">
+                                하나의 아이디어에서도 다양한 표현의 가능성을 찾고, <br>
+                                가장 효과적인 방법으로 풀어내는 데 집중합니다. <br>
+                                새로운 도구와 방식을 적극적으로 익히며 디자인의 범위를 넓혀갑니다.
+                            </p>
+                        </div>
+
+
+                        <div class="info-card-wrap">
+
+                            <div class="info-card">
+                                <h3>
+                                    <span class="card-num">01</span>
+                                    TOOLS
+                                </h3>
+
+                                <p>
+                                    Photoshop · Illustrator · Figma · InDesign ·
+                                    Premiere Pro · After Effects · VS Code
+                                </p>
+                            </div>
+
+
+                            <div class="info-card">
+                                <h3>
+                                    <span class="card-num">02</span>
+                                    AI TOOLS
+                                </h3>
+
+                                <p>
+                                    ChatGPT · Claude · Gemini · Google Flow ·
+                                    Magnific · Kling AI · Runway
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 프로젝트 -->
+        <section id="projects-old" hidden>
+            <div class="inner">
+                <div class="title">
+                    <h1>Branding</h1>
+                </div>
+
+                <div class="project-list">
+                    <!-- Project 1 -->
+                    <div class="project-item reveal" data-aos="fade-right">
+                        <div class="project-thumb">
+                            <div class="thumb-inner">
+                                <!-- 프로젝트 썸네일 이미지/영상 -->
+                                <!-- <img src="./images/bibx.png" alt="brand"> -->
+                                <video src="./video/bibx_guide.mp4" autoplay muted loop playsinline></video>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span>BI/BX guide</span>
+                            <h3>향수 브랜드<br>'scentrack'</h3>
+                            <p>SCENTRACK은 향을 통해 기억을 재생하는 향수 브랜드입니다. <br>
+                                LP의 재생 구조를 기반으로 향을 시간의 흐름 속에서 <br>
+                                재생되는 감각으로 재해석하였습니다.</p>
+                            <a href="./bibx_guide.html" class="btn-view">
+                                View BI/BX guide
+                                <div class="arrow-button">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-item reverse reveal" data-aos="fade-left">
+                        <div class="project-info">
+                            <span>WEB guide</span>
+                            <h3>향수 브랜드<br>'scentrack'</h3>
+                            <p>SCENTRACK의 웹 가이드는 브랜드의 감성과
+                                <br>
+                                아이덴티티를 디지털 환경에서도 일관되게 전달하기 위한
+                                <br>
+                                디자인 기준으로 구성되었습니다.
+                            </p>
+                            <a href="./web_guide.html" class="btn-view">
+                                View WEB guide
+                                <div class="arrow-button">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="project-thumb">
+                            <div class="thumb-inner">
+                                <!-- 프로젝트 썸네일 이미지 -->
+                                <img src="./images/web_guide.svg" alt="brand">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-item reveal" data-aos="fade-right">
+                        <div class="project-thumb">
+                            <div class="thumb-inner">
+                                <!-- 프로젝트 썸네일 이미지 -->
+                                <img src="./images/web_site.svg" alt="brand">
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span>WEB site</span>
+                            <h3>향수 브랜드<br>'scentrack'</h3>
+                            <p>SCENTRACK 웹사이트는 향과 음악,
+                                <br>
+                                그리고 기억의 흐름을 감각적인 브랜드 경험으로
+                                <br>
+                                전달하기 위해 제작되었습니다.
+                            </p>
+                            <a href="https://rkdus12300-code.github.io/scentrack/" target="_blank" class="btn-view">
+                                View WEB site
+                                <div class="arrow-button">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </a>
+                            <br> <br>
+                            <a href="https://rkdus12300-code.github.io/scentrack/product_page.html" target="_blank"
+                                class="btn-view">
+                                Product Page
+                                <div class="arrow-button">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ========================================
+     새로운 BRANDING
+======================================== -->
+
+        <section id="projects">
+
+            <div class="inner">
+
+                <!-- 타이틀 -->
+                <div class="branding-title">
+
+                    <h1>
+                        BRANDING
+                    </h1>
+
+                </div>
+
+
+                <!-- SCENTRACK -->
+                <div class="brand-section">
+
+                    <div class="brand-intro">
+
+                        <h2 class="scentrack-title">SCENTRACK</h2>
+
+                        <p>
+                            SCENTRACK은 향을 통해 기억을 재생하는 향수 브랜드입니다.<br>
+                            LP의 재생 구조를 기반으로 향을 시간의 흐름 속에서 재생되는 감각으로 재해석하였습니다.
+                        </p>
+
+                    </div>
+
+
+                    <div class="brand-project-grid" data-aos="fade-up">
+
+                        <!-- 01 -->
+                        <div class="brand-project-card">
+
+                            <a href="https://rkdus12300-code.github.io/scentrack/" target="_blank"
+                                class="brand-project-image">
+
+                                <img src="./images/web_site.svg" alt="SCENTRACK Website">
+
+                            </a>
+
+                            <div class="brand-project-btns">
+
+                                <a href="https://rkdus12300-code.github.io/scentrack/" target="_blank">
+                                    Web Site
+                                </a>
+
+                                <a href="https://rkdus12300-code.github.io/scentrack/product_page.html" target="_blank">
+                                    Product Page
+                                </a>
+
+                            </div>
+
+                            <p class="brand-project-desc">
+                                SCENTRACK 웹사이트는 향과 음악,<br>
+                                그리고 기억의 흐름을 감각적인 브랜드 경험으로<br>
+                                전달하기 위해 제작되었습니다.
+                            </p>
+
+                        </div>
+
+
+                        <!-- 02 -->
+                        <div class="brand-project-card">
+
+                            <a href="./bibx_guide.html" class="brand-project-image">
+
+                                <video src="./video/bibx_guide.mp4" autoplay muted loop playsinline>
+                                </video>
+
+                            </a>
+
+                            <div class="brand-project-btns">
+
+                                <a href="./bibx_guide.html">
+                                    BI/BX Guide
+                                </a>
+
+                            </div>
+
+                            <p class="brand-project-desc">
+                                SCENTRACK의 BI/BX 가이드는 브랜드의<br>
+                                시각적 아이덴티티와 사용자 경험을 하나의 흐름으로<br>
+                                연결하기 위해 설계되었습니다.
+                            </p>
+
+                        </div>
+
+
+                        <!-- 03 -->
+
+                        <div class="brand-project-card">
+
+                            <a href="./web_guide.html" class="brand-project-image">
+
+                                <img src="./images/web_guide.svg" alt="SCENTRACK Web Guide">
+
+                            </a>
+
+                            <div class="brand-project-btns">
+
+                                <a href="./web_guide.html">
+                                    Web Guide
+                                </a>
+
+                            </div>
+
+                            <p class="brand-project-desc">
+                                SCENTRACK의 웹 가이드는 브랜드의 감성과<br>
+                                아이덴티티를 디지털 환경에서도 일관되게 전달하기 위한<br>
+                                디자인 기준으로 구성되었습니다.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FRUTA는 여기에 이어서 -->
+                <div class="brand-section">
+
+                    <div class="brand-intro">
+
+                        <h2 class="fruta-title">FRUTA</h2>
+
+                        <p>
+                            FRUTA는 신선한 과일을 일상 속에서 간편하게 즐길 수 있도록 제안하는 과일 브랜드입니다.<br>
+                            레트로한 무드와 밝고 경쾌한 비주얼을 통해 과일을 보다 친근하고 즐거운 경험으로 풀어냈습니다.
+                        </p>
+
+                    </div>
+
+
+                    <div class="brand-project-grid" data-aos="fade-up">
+
+                        <!-- 01 -->
+                        <div class="brand-project-card">
+
+                            <a href="https://rkdus12300-code.github.io/fruta/" target="_blank"
+                                class="brand-project-image">
+
+                                <img src="./images/web_site02.svg" alt="FRUTA Website">
+
+                            </a>
+
+                            <div class="brand-project-btns">
+
+                                <a href="https://rkdus12300-code.github.io/fruta/" target="_blank">
+                                    Web Site
+                                </a>
+
+                                <a href="https://rkdus12300-code.github.io/fruta/product_page.html" target="_blank">
+                                    Product Page
+                                </a>
+
+                            </div>
+
+                            <p class="brand-project-desc">
+                                FRUTA 웹사이트와 상세페이지는 다채로운 과일 비주얼과 <br>
+                                레트로한 무드를 활용해 제품을 <br>
+                                쉽고 즐겁게 탐색할 수 있도록 제작하였습니다.
+                            </p>
+
+                        </div>
+
+                        <!-- 02 -->
+                        <div class="brand-project-card">
+
+                            <a href="./bibx_guide02.html" class="brand-project-image">
+
+                                <video src="./video/bibx_guide02.mp4" autoplay muted loop playsinline>
+                                </video>
+
+                            </a>
+
+                            <div class="brand-project-btns">
+
+                                <a href="./bibx_guide02.html">
+                                    BI/BX Guide
+                                </a>
+
+                            </div>
+
+                            <p class="brand-project-desc">
+                                FRUTA의 BI/BX 가이드는 브랜드의 밝고 경쾌한 이미지와 <br>
+                                레트로한 감성을 바탕으로, 시각적 아이덴티티를 일관되게 <br>
+                                전달하기 위한 디자인 기준으로 구성되었습니다.
+                            </p>
+
+                        </div>
+                
+                        <!-- 03 -->
+                        <div class="brand-project-card">
+
+                            <a href="./web_guide02.html" class="brand-project-image">
+
+                                <img src="./images/web_guide02.svg" alt="FRUTA Web Guide">
+
+                            </a>
+
+                            <div class="brand-project-btns">
+
+                                <a href="./web_guide02.html">
+                                    Web Guide
+                                </a>
+
+                            </div>
+
+                            <p class="brand-project-desc">
+                                FRUTA의 웹 가이드는 PC와 모바일 환경을 고려하여 <br>
+                                레이아웃과 콘텐츠 구조, 반응형 기준을 <br>
+                                체계적으로 설계하였습니다.
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- 아트워크 -->
+        <section id="artwork">
+            <div class="inner">
+                <!-- title -->
+                <div class="title">
+                    <h1>ARTWORK</h1>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid" data-aos="fade-up">
+
+                    <!-- Item 1: Clyc -->
+                    <a href="https://youtu.be/1PMeN8GZPv4" target="_blank" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <!-- <img src="./images/best02.jpg" alt=""> -->
+                            <img class="img-fluid" src="./images/mockup template.svg" alt="template">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork01</h3>
+                                <p>센트랙 목업 소개 템플릿</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/aftereffects.png" alt="aftereffects">
+                                <!-- <img src="./images/figma.png" alt="figma"> -->
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 2: Hydra -->
+                    <a href="https://www.figma.com/proto/gBLcTOxSkdhQMAF8sU82py/%EC%B9%B4%EC%B9%B4%EC%98%A4-%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4-%EB%B0%B0%EB%84%88?page-id=0%3A1&node-id=10-1088&p=f&viewport=-71%2C154%2C0.27&t=Rsmigb3YzrQmx1nK-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=10%3A1088"
+                        target="_blank" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/kakao1.svg" alt="kakao1">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork02</h3>
+                                <p>클라우디 베이 카카오 비즈니스 배너</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/photoshop.png" alt="photoshop">
+                                <img src="./images/figma.png" alt="figma">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 3: Kayak -->
+                    <a href="https://www.figma.com/proto/OnpXLjCHc6qFFIXpLNClcp/%EC%B9%B4%EC%B9%B4%EC%98%A4-%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4-%EB%B0%B0%EB%84%882?page-id=0%3A1&node-id=1-198&p=f&viewport=724%2C261%2C0.26&t=9i9pU5G1ADmxegDs-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A198"
+                        target="_blank" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/kakao2.svg" alt="kakao2">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork03</h3>
+                                <p>폴 바셋 카카오 비즈니스 배너</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/photoshop.png" alt="photoshop">
+                                <img src="./images/figma.png" alt="figma">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 4: Logotypes & Marks -->
+                    <a href="./cardnews1.html" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/cardnews1.svg" alt="cardnews">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork04</h3>
+                                <p>영화 추천 카드뉴스</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/photoshop.png" alt="photoshop">
+                                <img src="./images/vs_code.png" alt="vs_code">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 5: Project 05 -->
+                    <a href="./cardnews2.html" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/cardnews2.svg" alt="cardnews">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork05</h3>
+                                <p>강아지 행동 카드뉴스</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/photoshop.png" alt="photoshop">
+                                <img src="./images/vs_code.png" alt="vs_code">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 6: Project 06 -->
+                    <a href="./poster.html" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/poster.svg" alt="poster">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork06</h3>
+                                <p>프루타 포스터</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/photoshop.png" alt="photoshop">
+                                <img src="./images/vs_code.png" alt="vs_code">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- 비디오 모달 -->
+        <div id="videoModal">
+            <div class="modal-body" id="modalContainer">
+                <div class="btn-close" onclick="closeModal()">CLOSE ×</div>
+                <div id="videoPlayerArea"></div>
+            </div>
+        </div>
+
+        <!-- 1. 쇼츠 슬라이더 -->
+        <section class="slider-section">
+            <div class="inner">
+                <div class="slider-header">
+                    <h3>Short-form</h3>
+                    <p>Vertical creative works.</p>
+                </div>
+
+                <div class="swiper shortsSwiper" data-aos="fade-up">
+                    <div class="swiper-wrapper">
+                        <!-- 
+                         data-video-url: 유튜브 주소 혹은 파일 경로 / 클릭 시 보이게 하기 위한 연결
+                         data-video-type: 'vertical' (세로) 또는 'horizontal' (가로) 
+                    -->
+                        <div class="swiper-slide video-card" data-video-url="./video/perfume01 fishbowl.mp4"
+                            data-video-type="vertical">
+                            <div class="thumbnail-box aspect-shorts">
+
+                                <!-- 본인 작업 영상 -->
+                                <video src="./video/perfume01 fishbowl.mp4"></video>
+
+                                <div class="play-overlay">
+                                    <div class="play-circle shorts-play">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <h4 class="card-title">SCENTRACK Motion</h4>
+                                <p class="card-desc">AI SHORT FILM</p>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide video-card" data-video-url="./video/perfume04_airplane.mp4"
+                            data-video-type="vertical">
+                            <div class="thumbnail-box aspect-shorts">
+
+                                <!-- 본인 작업 영상 -->
+                                <video src="./video/perfume04_airplane.mp4"></video>
+
+                                <div class="play-overlay">
+                                    <div class="play-circle shorts-play">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <h4 class="card-title">SCENTRACK Motion</h4>
+                                <p class="card-desc">AI SHORT FILM</p>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide video-card" data-video-url="./video/cloudybay rose.mp4"
+                            data-video-type="vertical">
+                            <div class="thumbnail-box aspect-shorts">
+
+                                <!-- 본인 작업 영상 -->
+                                <video src="./video/cloudybay rose.mp4"></video>
+                                <div class="play-overlay">
+                                    <div class="play-circle shorts-play">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <h4 class="card-title">Cloudy Bay Motion</h4>
+                                <p class="card-desc">AI SHORT FILM</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="swiper-slide video-card" data-video-url="./video/paulbassett_lavender.mp4"
+                            data-video-type="vertical">
+                            <div class="thumbnail-box aspect-shorts">
+
+                                <!-- 본인 작업 영상 -->
+                                <video src="./video/paulbassett_lavender.mp4"></video>
+                                <div class="play-overlay">
+                                    <div class="play-circle shorts-play">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <h4 class="card-title">Paul Bassett Motion</h4>
+                                <p class="card-desc">AI SHORT FILM</p>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide video-card" data-video-url="./video/fruta_shorts01.mp4"
+                            data-video-type="vertical">
+                            <div class="thumbnail-box aspect-shorts">
+
+                                <!-- 본인 작업 영상 -->
+                                <video src="./video/fruta_shorts01.mp4"></video>
+                                <div class="play-overlay">
+                                    <div class="play-circle shorts-play">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <h4 class="card-title">FRUTA Motion</h4>
+                                <p class="card-desc">AI SHORT FILM</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide video-card" data-video-url="./video/fruta_shorts02.mp4"
+                            data-video-type="vertical">
+                            <div class="thumbnail-box aspect-shorts">
+
+                                <!-- 본인 작업 영상 -->
+                                <video src="./video/fruta_shorts02.mp4"></video>
+                                <div class="play-overlay">
+                                    <div class="play-circle shorts-play">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <h4 class="card-title">FRUTA Motion</h4>
+                                <p class="card-desc">AI SHORT FILM</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 일반 영상 슬라이더 -->
+        <section class="slider-section">
+            <div class="inner">
+                <div class="slider-header">
+                    <h3>AI VISUAL WORKS</h3>
+                    <p>AI-generated visual projects.</p>
+                </div>
+
+                <div class="swiper videoSwiper" data-aos="fade-up">
+                    <div class="swiper-wrapper">
+                        <!-- 가로 카드 01 -->
+                        <div class="swiper-slide video-card" data-video-url="./video/character ai perfume.mp4"
+                            data-video-type="horizontal">
+                            <div class="thumbnail-box aspect-wide">
+
+                                <!-- 본인 작업 비디오 소스 -->
+                                <video src="./video/character ai perfume.mp4"></video>
+
+                                <div class="play-overlay">
+                                    <div class="play-circle wide-play">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <h4 class="card-title">SCENTRACK AI FILM</h4>
+                                <p class="card-desc">AI를 활용해 브랜드의 공간과 캐릭터를 시네마틱 무드로 연출했습니다.</p>
+                            </div>
+                        </div>
+
+                        <!-- 가로 카드 02 -->
+                        <div class="swiper-slide video-card" data-video-url="./video/fruta_store_ai.mp4"
+                            data-video-type="horizontal">
+                            <div class="thumbnail-box aspect-wide">
+
+                                <!-- 본인 작업 비디오 소스 -->
+                                <video src="./video/fruta_store_ai.mp4"></video>
+
+                                <div class="play-overlay">
+                                    <div class="play-circle wide-play">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <h4 class="card-title">FRUTA AI FILM</h4>
+                                <p class="card-desc">AI를 활용해 브랜드 공간 속 과일 마스코트에 생동감 있는 움직임을 더했습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="inner">
+            <p class="contact-sub">LET’S BUILD SOMETHING GREAT</p>
+            <h2 class="contact-title">새로운 시작, 함께할까요?</span></h2>
+            <a href="mailto:designer@example.com" class="btn-contact">
+                <span>Contact</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="inner">
+            <p>Copyright © 2026 All rights reserved. THANK YOU FOR WATCHING.</p>
+            <p>Always Open to New Ideas.</p>
+        </div>
+    </footer>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- js -->
+    <script src="js/script.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
