@@ -1358,3 +1358,102 @@ footer .inner {
         font-size: 14px;
     }
 }
+
+
+/* ===== TOP BUTTON ===== */
+
+.top-button {
+    position: fixed;
+    right: 35px;
+    bottom: 35px;
+
+    width: 110px;
+
+    padding: 0;
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+    z-index: 1000;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+
+    transition: opacity 0.3s ease,
+        transform 0.3s ease,
+        visibility 0.3s ease;
+}
+
+.top-button.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.top-button img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+
+/* 화살표 */
+
+.top-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -35%);
+
+    font-size: 38px;
+    font-weight: 300;
+    color: #78b4a9;
+    text-shadow: 0 1px 4px rgba(255, 255, 255, 0.8);
+
+    opacity: 0;
+
+    transition: opacity 0.3s ease,
+        transform 0.3s ease;
+
+    pointer-events: none;
+}
+
+
+/* 마우스 호버 */
+
+/* PC에서만 hover */
+@media (hover: hover) and (pointer: fine) {
+    .top-button:hover img {
+        opacity: 0.35;
+    }
+
+    .top-button:hover .top-arrow {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* 모바일 터치 효과 */
+@media (hover: none) {
+    .top-button:active {
+        transform: scale(0.9);
+    }
+}
+
+
+/* 모바일 */
+
+@media (max-width: 768px) {
+    .top-button {
+        width: 75px;
+        right: 15px;
+        bottom: 20px;
+    }
+
+    .top-arrow {
+        font-size: 28px;
+    }
+}
